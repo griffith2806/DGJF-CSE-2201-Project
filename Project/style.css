@@ -9,6 +9,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  color: white;
 
 }
 
@@ -47,7 +48,7 @@ body{
   margin-left: 20%;
   margin-right: 5%;
   text-align: center;
-  background-color: #362d2d5c;
+  background-color: rgba(0,0,0,0.7);
   font-size: 0.938em;
   overflow:hidden;
   transition-duration: 1s;
@@ -116,14 +117,17 @@ li a:active{
 }
 
 footer{
-  min-height: 50px;
+  min-height: 60px;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   color: white;
   background-color: black;
   margin-left: 20%;
   margin-right: 5%;
+}
+footer p{
+  font-size: 0.8em;
 }
 
 /*Styling searchbar*/
@@ -167,6 +171,9 @@ nav input[type=text]{
     }
     .left {
       display: none;
+    }
+    .right:hover{
+      transform: none;
     }
 }
 
@@ -267,4 +274,77 @@ button .current{
 
 a{
   color: limegreen;
+}
+
+table, th, td{
+  border: 1px solid white;
+}
+
+table{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 10px 10px 10px black;
+}
+
+th{
+  height: 50px;
+  background-color: #660000;
+}
+
+th,td{
+  font-size: 0.938em;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd){
+  background-color: white;
+}
+
+td{
+  color: black;
+}
+
+.container{
+  max-width: 400px;
+  width: 100%;
+
+}
+
+form{
+  color: black;
+  background-color: #F9F9F9;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 10px;
+  font-size: 13px;
+}
+
+fieldset{
+  border: medium none;
+}
+
+form input, textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+form button{
+  width: 100%;
+  background-color: #660000;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+}
+
+form input{
+  padding: 10px 0;
 }

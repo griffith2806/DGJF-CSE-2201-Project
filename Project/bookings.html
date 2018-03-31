@@ -60,31 +60,31 @@
 </nav>
 <body>
   <div class="right">
-  <form>
-    <h1>Hotel Bookings</h1>
-    <label>Last Name:</label>
-    <input type="text" name="last name" required>
-    <label>First Name:</label>
-    <input type="text" name="first name" required>
-    <label>Phone #:</label>
-    <input type="tel" name="tel">
-    <label>Email Address:</label>
-    <input type="email" name="email" required>
-    <label>Number of Rooms:</label>
-    <input type="number" name="rooms">
-    <label>Number of Persons:</label>
-    <input type="number" name="persons">
-    <label>Full Address:</label>
-    <textarea cols="25" name="comments" rows="5"></textarea>
-    <label>DOB(dd/mm/yy):</label>
-    <input type="date" name="dob">
-    <label>Check in Date(mm/dd/yy)</label>
-    <input type="date" name="checkin">
-    <label>Check out Date(mm/dd/yy)</label>
-    <input type="date" name="checkout">
-    <label>Special Requests:</label>
-    <textarea cols="25" name="comments" rows="5"></textarea>
-    <button type="submit">Make reservation</button>
+  <form class="container">
+    <h1 style="color:black">Hotel Bookings</h1>
+    <label>Last Name:</label><br/>
+    <fieldset><input type="text" name="last name" required></fieldset><br/>
+    <label>First Name:</label><br/>
+    <fieldset><input type="text" name="first name" required></fieldset><br/>
+    <label>Phone #:</label><br/>
+    <fieldset><input type="tel" name="tel"></fieldset><br/>
+    <label>Email Address:</label><br/>
+    <fieldset><input type="email" name="email" required></fieldset><br/>
+    <label>Number of Rooms:</label><br/>
+    <fieldset><input type="number" name="rooms"></fieldset><br/>
+    <label>Number of Persons:</label><br/>
+    <fieldset><input type="number" name="persons"></fieldset><br/>
+    <label>Full Address:</label><br/>
+    <fieldset><textarea cols="25" name="comments" rows="5"></textarea></fieldset><br/>
+    <label>DOB(dd/mm/yy):</label><br/>
+    <fieldset><input type="date" name="dob"></fieldset><br/>
+    <label>Check in Date(mm/dd/yy)</label><br/>
+    <fieldset><input type="date" name="checkin"></fieldset><br/>
+    <label>Check out Date(mm/dd/yy)</label><br/>
+    <fieldset><input type="date" name="checkout"></fieldset><br/>
+    <label>Special Requests:</label><br/>
+    <fieldset><textarea cols="25" name="comments" rows="5"></textarea></fieldset><br/>
+    <fieldset><button type="submit" class="fbutton">Make reservation</button></fieldset><br/><br/>
   </form>
 </div>
 </body>
