@@ -41,7 +41,7 @@ body{
 }
 
 .right{
-  margin-top: 0.938em; /*try in in chrome .. use the element thingy*/
+  margin-top: 3em; /*try in in chrome .. use the element thingy*/
   padding-left: 300px;
   padding-right: 300px;
   margin-left: 20%;
@@ -50,6 +50,11 @@ body{
   background-color: #362d2d5c;
   font-size: 0.938em;
   overflow:hidden;
+  transition-duration: 1s;
+}
+
+.right:hover{
+  transform: scale(1.1);
 }
 
 .right p, li{
@@ -61,7 +66,7 @@ h1{
 }
 
 .vid{
-  margin-top: 10px;
+  margin-top: 3em;
   background-color: #D9D9D9;
   padding: 50px;
   margin-left: 20%;
@@ -102,7 +107,7 @@ li a {
 }
 
 li a:hover {
-  background-color: black;
+  background-color: rgba(255,0,0,0.5);
   border: 1.5px solid black;
   transition: all .3s ease-in;
 }
@@ -219,7 +224,7 @@ nav input[type=text]{
 
 
 .dropdown:hover .dropbut {
-  background-color: black;
+  background-color: rgba(255,0,0,0.5);
 }
 
 
@@ -243,7 +248,7 @@ nav input[type=text]{
 
 
 .dropcon a:hover {
-  background-color: #2b7a78;
+  background-color: rgba(255,0,0,0.5);
 }
 
 .dropdown:hover .dropcon {
@@ -253,6 +258,11 @@ nav input[type=text]{
 nav ul .current{
     background-color: rgba(255,0,0,0.5);
     color: white;
+}
+
+button .current{
+  background-color: rgba(255,0,0,0.5);
+  color: white;
 }
 
 a{
