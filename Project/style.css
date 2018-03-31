@@ -15,24 +15,29 @@ body{
 .left{
   max-width: 15%;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 20%;
-  left: 10px;
+  left: 2%;
   background-color: rgba(0,0,0,0.5);
   padding: 8px 0;
 }
 
+.left img{
+  max-height: 15%;
+  max-width: 100%;
+}
+
 .left a {
-  margin-top: 10%;
+  margin-top: 0;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: rgba(255,255,255,0.75);
   display: block;
 }
 
 .left a:hover{
-  color: #064579;
+  color: grey;
 }
 
 .right{
@@ -42,12 +47,17 @@ body{
   margin-left: 20%;
   margin-right: 5%;
   text-align: center;
-  background-color: white;
+  background-color: #362d2d5c;
   font-size: 0.938em;
+  overflow:hidden;
 }
 
-.right p{
+.right p, li{
   line-height: 2;
+  color: #ddddddc7;
+}
+h1{
+  color:#f0ffffcf;
 }
 
 .vid{
@@ -64,16 +74,17 @@ iframe{
 
 nav{
   top: 10px;
-  width: 85%;
-margin-left: 13%;
+  width: 92%;
+  margin-left: 45px;
 }
 
 nav ul{
   list-style-type: none;
   margin-left: -1%;
+  margin-top: 10px;
   padding: 15px;
   overflow: hidden;
-  background-color: #0EBFE9;
+  background-color: #f57b7b5c;
 }
 
 li {
@@ -99,6 +110,17 @@ li a:active{
   background-color: black;
 }
 
+footer{
+  min-height: 50px;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  background-color: #f57b7b5c;
+  margin-left: 20%;
+  margin-right: 5%;
+}
+
 /*Styling searchbar*/
 nav input[type=text]{
   float: right;
@@ -109,7 +131,7 @@ nav input[type=text]{
 }
 
 @media screen and (max-width: 600px) {
-     nav ul, nav input[type=text] {
+     nav ul, nav input[type=text], .right{
         float: none;
         display: block;
         text-align: left;
@@ -117,10 +139,65 @@ nav input[type=text]{
         margin: 0;
         padding: 14px;
     }
+    nav{
+      margin-left: -2%;
+    }
     nav input[type=text] {
         border: 1px solid #ccc;
     }
+    .vid{
+      margin-top: 10px;
+      background-color: black;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+    }
+    img{
+      max-width: 100%
+    }
+    iframe{
+      margin-left: 0;
+      align: middle;
+    }
+    .left {
+      display: none;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+     nav ul, nav input[type=text], .right{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    nav{
+      margin-left: -2%;
+    }
+    nav input[type=text] {
+        border: 1px solid #ccc;
+    }
+    .vid{
+      margin-top: 10px;
+      background-color: black;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+    }
+    img{
+      max-width: 100%
+    }
+    iframe{
+      margin-left: 0;
+      align: middle;
+    }
+    .left {
+      display: none;
+    }
 }
 
 .dropdown {
@@ -171,4 +248,13 @@ nav input[type=text]{
 
 .dropdown:hover .dropcon {
   display: block;
+}
+
+nav ul .current{
+    background-color: black;
+    color: white;
+}
+
+a{
+  color: limegreen;
 }
