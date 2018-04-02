@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Splashmins Resort</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <div class="dropdown">
+        <button class="dropbut">Hotels
+        </button>
+        <div class="dropcon">
+          <a href="hdescription.html">Description</a>
+          <a href="hpackages.html">Packages</a>
+          <a href="weddings.html">Honeymoon Packages</a>
+          <a href="hwwpackages.html">Worldwide Packages</a>
+          <a href="bookings.html">Bookings</a>
+          <a href="policies.html">Policies</a>
+      </div>
+    </div></li>
+      <li><div class="dropdown">
+        <button class="dropbut">Eco Camping Grounds
+        </button>
+      <div class="dropcon">
+        <a href="aboutcg.html">About Camping Grounds</a>
+        <a href="cpackages.html">Packages</a>
+        <a href="wtours.html">Wetland Tours</a>
+      </div>
+      </div></li>
+    <li><div class="dropdown">
+      <button class="dropbut">Water & Fun Park
+      </button>
+        <div class="dropcon">
+          <a href="wfpdesc.html">Description</a>
+          <a href="wfpfeatures.html">Features</a>
+          <a href="members.html">Become a Member</a>
+          <a href="thingstodo.html">Things to do while here</a>
+          <a href="events.html">Private/Special Events</a>
+          <a href="conferences.html">Conference Facility</a>
+          <a href="tours.html">Guyana Tours</a>
+        </div>
+      </div></li>
+    <li><a href="guyana.html">About Guyana</a></li>
+    <li><div class="dropdown">
+          <button class="dropbut" style="background-color: rgba(255,0,0,0.5)">About Us
+          </button>
+            <div class="dropcon">
+              <a href="aboutus.html">About Splashmins Resort</a>
+              <a href="galler.html" style="background-color: rgba(255,0,0,0.5)">Photo Gallery</a>
+            </div>
+          </div></li>
+    <li><a href="Contact Us.html">Contact US</a></li>
+    <li><a href="bookings.html">Book Now</a></li>
+    <!--Search bar here-->
+    <input type="text" placeholder="Search...">
+  </ul>
+</nav>
+<body>
+  <div class="rightTile">
+    <h1>Photo Gallery</h1>
+        <img class="myImg" src="images/gallery/pg1.jpg">
+        <img class="myImg" src="images/gallery/pg2.jpg">
+        <img class="myImg" src="images/gallery/pg3.jpg">
+        <img class="myImg" src="images/gallery/pg4.jpg">
+        <img class="myImg" src="images/gallery/pg5.jpg">
+        <img class="myImg" src="images/gallery/pg6.jpg">
+        <img class="myImg" src="images/gallery/pg7.jpg">
+        <img class="myImg" src="images/gallery/pg21.jpg">
+        <img class="myImg" src="images/gallery/pg8.jpg">
+        <img class="myImg" src="images/gallery/pg9.jpg">
+        <img class="myImg" src="images/gallery/pg10.jpg">
+        <img class="myImg" src="images/gallery/pg11.jpg">
+        <img class="myImg" src="images/gallery/pg12.jpg">
+        <img class="myImg" src="images/gallery/pg13.jpg">
+        <img class="myImg" src="images/gallery/pg14.jpg">
+        <img class="myImg" src="images/gallery/pg16.jpg">
+        <img class="myImg" src="images/gallery/pg15.jpg">
+        <img class="myImg" src="images/gallery/pg17.jpg">
+        <img class="myImg" src="images/gallery/pg18.jpg">
+        <img class="myImg" src="images/gallery/pg19.jpg">
+        <img class="myImg" src="images/gallery/pg20.jpg">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+</body>
+<footer>
+  <p>
+    Splashmins © 2018 | Tel: (592) 2237301-3 <br/>
+    All Rights Reserved.
+  </p>
+</footer>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal
+var img = $('.myImg');
+var modalImg = $("#img01");
+$('.myImg').click(function(){
+  modal.style.display = "block";
+  var newSrc = this.src;
+  modalImg.attr('src', newSrc);
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+</script>
+</html>
